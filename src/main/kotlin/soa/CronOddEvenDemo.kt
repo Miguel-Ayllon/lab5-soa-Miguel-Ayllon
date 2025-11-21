@@ -102,7 +102,7 @@ class IntegrationApplication(
                 val passes = Math.abs(p) % 2 != 0
                 logger.info("  🔍 Odd Filter: checking {} → {}", p, if (passes) "PASS" else "REJECT")
                 passes
-            } 
+            }
             transform { obj: Int ->
                 logger.info("  ⚙️  Odd Transformer: {} → 'Number {}'", obj, obj)
                 "Number $obj"
